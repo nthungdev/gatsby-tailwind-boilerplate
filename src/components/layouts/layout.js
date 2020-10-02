@@ -23,9 +23,9 @@ const Layout = ({ children, fullWidthBody = false }) => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.title} />
       <Main fullWidth={fullWidthBody}>{children}</Main>
-      <Footer />
+      <Footer siteTitle={data.title} />
     </div>
   )
 }

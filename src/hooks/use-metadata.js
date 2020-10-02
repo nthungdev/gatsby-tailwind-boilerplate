@@ -11,7 +11,7 @@ const useMetadata = () => {
     }
   `)
 
-  return data
+  return data.site.siteMetadata
 }
 
 export default useMetadata
