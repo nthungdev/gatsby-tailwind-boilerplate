@@ -6,11 +6,11 @@
   "license": "0BSD",
   "scripts": {
     "build:css": "tailwind build src/styles/tailwind.css -o src/styles/index.css",
-    "watch:css": "tailwind build src/styles/tailwind.css -o src/styles/index.css",
     "build": "yarn build:css && gatsby build",
-    "dev": "yarn watch:css && gatsby develop",
+    "predev": "yarn build:css",
+    "dev": "yarn watch:css && gatsby develop --host 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "yarn dev",
     "serve": "gatsby serve --host 0.0.0.0",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
