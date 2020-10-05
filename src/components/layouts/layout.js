@@ -14,8 +14,8 @@ import Footer from "components/footer"
 import useMetadata from "hooks/use-metadata"
 
 const Main = styled.main(({ fullWidth }) => [
-  tw`container flex-1 py-4`,
-  !fullWidth && tw`mx-auto`,
+  tw`flex-1 py-4`,
+  !fullWidth && tw`container mx-auto`,
 ])
 
 const Layout = ({ children, fullWidthBody = false }) => {
