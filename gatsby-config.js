@@ -10,6 +10,7 @@ module.exports = {
     title: `Gatsby Tailwind Boilerplate`,
     description: ``,
     author: ``,
+    siteUrl: `http://localhost:8000`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

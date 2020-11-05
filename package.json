@@ -6,9 +6,10 @@
   "license": "0BSD",
   "scripts": {
     "build:css": "tailwind build src/styles/tailwind.css -o src/styles/index.css",
-    "build": "yarn build:css && gatsby build",
     "predev": "yarn build:css",
-    "dev": "yarn watch:css && gatsby develop --host 0.0.0.0",
+    "dev": "gatsby develop --host 0.0.0.0",
+    "prebuild": "yarn build:css",
+    "build": "yarn build:css && gatsby build",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "yarn dev",
     "serve": "gatsby serve --host 0.0.0.0",
